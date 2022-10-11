@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran PPDB</title>
+</head>
+<body>
+    <h2>FORMULIR PPDB JALUR ZONASI TAHUN 2022</h2>
+
+    <!--Form-->
+    <form name="fppdb" action="proses.php" method="post">
+        <table style="border: 1px solid black; border-collapse: collapse;">
+            <tr>
+                <td style="border: 1px solid black; font-weight: bold;">Nomor</td>
+                <td style="border: 1px solid black; font-weight: bold;">INFO PENDAFTARAN</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">1</td>
+                <td style="border: 1px solid black;">NISN <input type="number" name="fnisn" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">2</td>
+                <td style="border: 1px solid black;">Asal Sekolah <input type="text" name="fasalsekolah" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">3</td>
+                <td style="border: 1px solid black;">Tahun Lulus <input type="date" name="ftahunlulus" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; font-weight: bold;" colspan="2">DATA CALON PESERTA</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">6</td>
+                <td style="border: 1px solid black;">Nama Lengkap <input type="text" name="fnamalengkap" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">7</td>
+                <td style="border: 1px solid black;">NIK <input type="number" name="fnik" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">8</td>
+                <td style="border: 1px solid black;">Tempat / Tanggal Lahir <input type="text" name="ftempatlahir" required> Umur : <input style="width: 30px;" type="number" name="fumurtahun" required>Tahun, <input style="width: 30px;" type="number" name="fumurbulan" required>Bulan</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="border: 1px solid black;">Foto Copy Akte Kelahiran Yang Telah Terlegalisasi (dilampirkan) <input type="file" name="ffile" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">9</td>
+                <td style="border: 1px solid black;">Jenis Kelamin <input type="radio" name="gender" value="pria"> Pria <input type="radio" name="gender" value="wanita"> wanita </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">10</td>
+                <td style="border: 1px solid black;">Alamat <input type="text" name="falamat" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">11</td>
+                <td style="border: 1px solid black;">Desa / Kel. <input type="text" name="fdesakel" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">12</td>
+                <td style="border: 1px solid black;">Kecamatan <input type="text" name="fkecamatan" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">13</td>
+                <td style="border: 1px solid black;">Kabupaten <input type="text" name="fkabupaten" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">14</td>
+                <td style="border: 1px solid black;">Provinsi <input type="text" name="fprovinsi" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">15</td>
+                <td style="border: 1px solid black;">Email Aktif <input type="text" name="femailaktif" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; font-weight: bold;" colspan="2">DATA ORANG TUA</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">16</td>
+                <td style="border: 1px solid black;">Nomor Kartu Keluarga <input type="number" name="fnomorkartukeluarga" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">17</td>
+                <td style="border: 1px solid black;">Nama Ayah Kandung <input type="text" name="fnamaayahkandung" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">18</td>
+                <td style="border: 1px solid black;">Agama
+                <select name="fagamaayah" id="" required>
+                    <option value="">Pilih Agama</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Khonghucu">Khonghucu</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">19</td>
+                <td style="border: 1px solid black;">Pekerjaan <input type="text" name="fpekerjaanayah" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">20</td>
+                <td style="border: 1px solid black;">Nama Ibu Kandung <input type="text" name="fnamaibukandung" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">21</td>
+                <td style="border: 1px solid black;">Agama
+                <select name="fagamaibu" id="" required>
+                    <option value="">Pilih Agama</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Khonghucu">Khonghucu</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">22</td>
+                <td style="border: 1px solid black;">Pekerjaan <input type="text" name="fpekerjaanibu" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">23</td>
+                <td style="border: 1px solid black;">Alamat Orang Tua <input type="text" name="falamatorangtua" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">24</td>
+                <td style="border: 1px solid black;">Desa / Kel. <input type="text" name="fdesakelorangtua" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">25</td>
+                <td style="border: 1px solid black;">Kecamatan <input type="text" name="fkecamatanorangtua" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">26</td>
+                <td style="border: 1px solid black;">Kabupaten <input type="text" name="fkabupatenorangtua" required></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;" align="center">27</td>
+                <td style="border: 1px solid black;">Provinsi <input type="text" name="fprovinsiorangtua" required></td>
+            </tr>
+        </table>
+
+        <!--Submit Button-->
+        <input style="background-color: gray; border-radius: 8px; font-weight: bold; font-size: 15px; width: 100px; height: 30px; border: none; color: white;" type="submit" name="fsubmit">
+        <input type="hidden" name="fhide" value="r4h4s14">
+        <!--Submit Button End-->
+    </form>
+    <!--Form End-->
+</body>
+</html>
